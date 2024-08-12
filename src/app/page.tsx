@@ -10,6 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const GOLD = 1027;
 const SILVER = 535;
