@@ -9,6 +9,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const GOLD = 1027;
 const SILVER = 535;
