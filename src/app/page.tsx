@@ -26,7 +26,9 @@ const fetchMedalData = async (countryCode: string | null) => {
 
 const medalDataArray = await Promise.all(
   countries.map(async (country) => {
-    const medalData = await fetchMedalData(country.fifa_code);
+    const medalData = await fetchMedalData(
+      country.fifa_code || country.iso_alpha_3
+    );
     const gold = medalData?.results[0]?.medals?.gold || 0;
     const silver = medalData?.results[0]?.medals?.silver || 0;
     const bronze = medalData?.results[0]?.medals?.bronze || 0;
