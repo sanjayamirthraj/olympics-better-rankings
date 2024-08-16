@@ -112,7 +112,7 @@ export default async function Home() {
               <TableHead>Silver</TableHead>
               <TableHead>Bronze</TableHead>
               <TableHead>Total Value</TableHead>
-              <TableHead>Original Rank</TableHead>
+              <TableHead className="text-right">Original Rank</TableHead>
               <TableHead className="text-right">Value Rank</TableHead>
             </TableRow>
           </TableHeader>
@@ -140,7 +140,9 @@ export default async function Home() {
                           ","
                         )}
                     </TableCell>
-                    <TableCell>{country.originalRank}</TableCell>
+                    <TableCell className="text-right">
+                      {country.originalRank}
+                    </TableCell>
                     <TableCell className="text-right">{country.rank}</TableCell>
                   </TableRow>
                 );
