@@ -10,14 +10,18 @@ export default function MenuBar() {
             The Paris 2024 Olympic Medals Value ranking!
           </Link>
           <nav className="hidden md:flex gap-4">
-          
+            <Link
+              className="font-medium flex items-center text-sm transition-colors hover:underline"
+              href="https://github.com/sanjayamirthraj/olympics-better-rankings"
+            >
+              Visit the Github repo!
+            </Link>
             <Link
               className="font-medium flex items-center text-sm transition-colors hover:underline"
               href="https://www.deseret.com/u-s-world/2024/08/07/how-much-gold-olympic-medal-value/"
             >
               Where did I get these numbers from?
             </Link>
-         
           </nav>
         </div>
       </div>
