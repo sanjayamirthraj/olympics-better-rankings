@@ -74,7 +74,7 @@ sortedCountries.forEach((country, index) => {
 
 export default async function Home() {
   return (
-    <div className="p-12">
+    <div className="sm:p-0 md:p-12">
       <div className="p-10">
         <MenuBar />
       </div>
@@ -110,7 +110,7 @@ export default async function Home() {
               <TableHead>Silver</TableHead>
               <TableHead>Bronze</TableHead>
               <TableHead>Total Value</TableHead>
-              <TableHead className="text-right">Original Rank</TableHead>
+              <TableHead>Original Rank</TableHead>
               <TableHead className="text-right">Value Rank</TableHead>
             </TableRow>
           </TableHeader>
